@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="financasApp.PageContas" Title="Contas bancárias">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="enCodBanco" Placeholder="Codigo do banco" Keyboard="Numeric"></Entry>
+            <Entry x:Name="enNomeBanco" Placeholder="Nome do banco"></Entry>
+            <Entry x:Name="enNomeConta" Placeholder="Nome da conta"></Entry>
+            <Entry x:Name="enNumConta" Placeholder="Numero da conta" Keyboard="Numeric"></Entry>
+            <Button x:Name="btAddConta" Text="Incluir Conta" Clicked="btAddConta_Clicked"></Button>
+            <Label Text="Suas contas bancárias:" HorizontalOptions="Center"></Label>
+            <ListView x:Name="lvContas" ItemsSource="{Binding contas}" ItemTapped="lvContas_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding nome}"></TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

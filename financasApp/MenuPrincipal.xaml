@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="financasApp.MenuPrincipal" Title="Menu Principal">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="btContas" Text="Contas e Cartões" Clicked="btContas_Clicked" ></Button>
+            <Button x:Name="btCategorias" Text="Categorias" Clicked="btCategorias_Clicked"></Button>
+            <Button x:Name="btDespesas" Text="Despesas" Clicked="btDespesas_Clicked"></Button>
+            <Button x:Name="btReceitas" Text="Receitas" Clicked="btReceitas_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
