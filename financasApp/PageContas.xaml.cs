@@ -35,6 +35,10 @@ namespace financasApp
             if (respostaHttp.processado)
             {
                 refreshContas();
+                enNomeConta.Text = "";
+                enCodBanco.Text = "";
+                enNomeBanco.Text = "";
+                enNumConta.Text = "";
             }
             else
             {

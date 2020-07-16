@@ -1,5 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="financasApp.PageReceitas">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="financasApp.PageReceitas" Title="Adicionar Receita">
     <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Data da receita:"></Label>
+            <DatePicker x:Name="dpData"></DatePicker>
+            <Label Text="Conta da receita:"></Label>
+            <Picker x:Name="pkConta" ItemsSource="{Binding Conta}" ItemDisplayBinding="{Binding nome}"></Picker>
+            <Label Text="Categoria da receita:"></Label>
+            <Picker x:Name="pkCategoria" ItemsSource="{Binding Categoria}" ItemDisplayBinding="{Binding nome}"></Picker>
+            <Label Text="Pagador:"></Label>
+            <Entry x:Name="enPagador" Placeholder="Pagador"></Entry>
+            <Label Text="Descrição:"></Label>
+            <Entry x:Name="enDescr" Placeholder="Descrição"></Entry>
+            <Label Text="Valor da receita R$"></Label>
+            <Entry x:Name="enValor" Placeholder="Valor" Keyboard="Numeric"></Entry>
+            <Button x:Name="btAddCredito" Clicked="btAddCredito_Clicked" Text="Adicionar Receita"></Button>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -5,7 +5,7 @@
             <Entry x:Name="enNomeCategoria" Placeholder="Nome da categoria"></Entry>
             <Button x:Name="btAddCategoria" Text="Incluir" Clicked="btAddCategoria_Clicked"></Button>
             <Label Text="Suas categorias:" HorizontalOptions="Center"></Label>
-            <ListView x:Name="lvCategorias" ItemsSource="{Binding categoria}" ItemTapped="lvCategorias_ItemTapped">
+            <ListView x:Name="lvCategorias" ItemsSource="{Binding categoria}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding nome}"></TextCell>

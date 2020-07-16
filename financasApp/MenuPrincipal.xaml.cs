@@ -31,5 +31,15 @@ namespace financasApp
         {
             Navigation.PushAsync(new PageReceitas());
         }
+
+        void btListDesp_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new PageLancamentos(1));
+        }
+
+        void btListRece_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new PageLancamentos(2));
+        }
     }
 }

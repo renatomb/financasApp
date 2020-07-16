@@ -6,6 +6,8 @@
             <Button x:Name="btCategorias" Text="Categorias" Clicked="btCategorias_Clicked"></Button>
             <Button x:Name="btDespesas" Text="Despesas" Clicked="btDespesas_Clicked"></Button>
             <Button x:Name="btReceitas" Text="Receitas" Clicked="btReceitas_Clicked"></Button>
+            <Button x:Name="btListDesp" Text="Listar Despesas" Clicked="btListDesp_Clicked"></Button>
+            <Button x:Name="btListRece" Text="Listar Receitas" Clicked="btListRece_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
